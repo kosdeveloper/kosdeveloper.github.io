@@ -28,5 +28,6 @@ document.cookie = `esquemaColor=dark;max-age=${3}`;
 
 
 setInterval(() => {
+  esquemaColor = getCookie("esquemaColor");
   console.log("Valor de la cookie 'esquemaColor':", esquemaColor);
 }, 4000);
