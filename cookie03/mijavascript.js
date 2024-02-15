@@ -15,9 +15,9 @@ function getCookie(nombre) {
 }
 
 // Obtener y mostrar los valores de las cookies
-const idioma = getCookie("idioma");
-const esquemaColor = getCookie("esquemaColor");
-const haVotadoEncuesta = getCookie("haVotadoEncuesta");
+let idioma = getCookie("idioma");
+let esquemaColor = getCookie("esquemaColor");
+let haVotadoEncuesta = getCookie("haVotadoEncuesta");
 
 console.log("Valor de la cookie 'idioma':", idioma);
 console.log("Valor de la cookie 'esquemaColor':", esquemaColor);
