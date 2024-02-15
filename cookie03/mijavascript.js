@@ -23,11 +23,11 @@ console.log("Valor de la cookie 'idioma':", idioma);
 console.log("Valor de la cookie 'esquemaColor':", esquemaColor);
 console.log("Valor de la cookie 'haVotadoEncuesta':", haVotadoEncuesta);
 
-//3 segundos de vida de la cookie
-document.cookie = `esquemaColor=dark;max-age=${3}`;
+//7 segundos de vida de la cookie
+document.cookie = `esquemaColor=dark;max-age=${7}`;
 
-
+// reviso cookie cada 3 segundos
 setInterval(() => {
   esquemaColor = getCookie("esquemaColor");
   console.log("Valor de la cookie 'esquemaColor':", esquemaColor);
-}, 4000);
+}, 3000);
